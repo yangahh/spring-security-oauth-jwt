@@ -1,18 +1,16 @@
 package org.example.springsecurityoauthjwt.entity;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Getter
 @Setter
-@Table(name = "USER")
 @Builder
-@RequiredArgsConstructor
-public class User {
+@Table(name = "USER")
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
