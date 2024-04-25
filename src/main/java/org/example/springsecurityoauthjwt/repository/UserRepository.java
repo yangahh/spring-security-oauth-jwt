@@ -1,8 +1,8 @@
 package org.example.springsecurityoauthjwt.repository;
 
-import org.example.springsecurityoauthjwt.entity.UserEntity;
+import org.example.springsecurityoauthjwt.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<UserEntity, Long> {
-    UserEntity findByUsername(String username);
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByUsername(String username);
 }
